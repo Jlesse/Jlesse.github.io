@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Julian's dev blog</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
 </head>
 
 <main>
-  <h1>Post Title</h1>
-  <h2>The subtitle, if you want it</h2>
-  <h4>Today's Date</h4>
+  <h1>Working with Git and Github</h1>
+  <h2><i>just the basics</h2>
+  <h4>August 22nd 2015</i></h4>
 
   <section>
     <p>
-      Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+        This past week I dove head first into learning Git and Github verision control, and its been very interesting, but its also been pretty big headache. This stuff can be very confusing at first, but I think I am starting to get the flow. I will try and convey some of what I learned this week and go over some basic commmands.
     </p>
     <p>
-        Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+        I think its important to get a feel for the flow of the Git and ithub process. I will go over the steps and then give some sample commands and a breif explanation  of what they do.
     </p>
     <p>
-        Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+        <h4>The flow seems to be something like this.</h4>
+        <ol>
+          <li>Clone from Github to your local machine.</li>
+          <li> Make and checkout a branch.
+          </li>
+          <li>  Make any neccesary changes within that branch.
+          </li>
+          <li> Add the changes to the staging area.
+          </li>
+          <li> Commit the branch with a desciprtive message.
+          </li>
+          <li>Push the branch to github.
+          </li>
+          <li>Go to the github repo and make a pull request.</li>
+          <li>Merge the branch with the master on github.
+          </li>
+          <li>delete the branch on github.
+          </li>
+          <li>delete the branch on your local machine. </li>
+            <li>Pull from github to update your master.</li>
+        </ol>
     </p>
+    <h2><i>Here is the flow in the terminal </i></h2>
+    <p>
+      <ol>
+        <li>phase0 :> git clone https://github.com/[username]/phase-0.git <b>#clone remote repo to local machine</b>
+        </li>
+        <li>week-1 [master] :> git pull <b>#pull branch from remote to local master to update local repo (you don't need to do this if you have a fresh clone)</b>
+        </li>
+        <li>week-1 [master] :> git checkout -b new-branch <b>#create a new branch and switch to it</b>
+        </li>
+        <li>
+          week-1 [new-branch] :> git status <b>#check status of the new branch</b>
+        </li>
+        <li>
+          week-1 [new-branch] :> git add . <b>#add changes to staging area</b>
+        </li>
+        <li>week-1 [new-branch] :> git commit -m "add random change" <b>#commit branch</b></li>
+        <li>week-1 [new-branch] :> git push -u origin new-branch <b>#tell git hub about branch and push it up in current state, now a pull request can be submitted with this branch on github, and may be deleted after merging, both remotely and locally.</b></li>
+        <li><b> go to Github, make a pull request, and merge branch, then delete old branch</b></li>
+        <li>week-1 [new-branch] :> git checkout master <b>#go to master branch</b>
+        </li>
+        <li>week-1 [master] :> git pull <b>#update local master branch from github after making any changes to github</b></li>
+        <li>week-1 [master] :> git branch -d new-branch <b>#delete branch locally.</b></li>
+      </ol>
+    </p>
+    <p> I hope that was helpful :)</p>
 
-      <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
 </main>
 
