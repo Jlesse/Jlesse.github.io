@@ -1,5 +1,103 @@
+<!doctype html>
 <html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>El Dev</title>
+  <style>
+
+    body {
+      background-color:#4084FF;
+    }
+
+    #top_header {
+      background-color:#E8BEB6;
+      height: 50px;
+    }
+
+    li {
+      background-color:#B7E81F;
+      display: inline;
+      padding: 10px;
+      margin: 20px;
+    }
+
+    h1 {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    a {
+      padding-top: 20px;
+      padding-left: 60px;
+      }
+
+    nav {
+      height: 30px;
+      background-color:#B7E81F;
+    }
+
+    .leftSection {
+      margin-top: 20px;
+      padding: 10px;
+      position: absolute;
+      left: 8px;
+      background-color:#FF4833;
+      width: 500px;
+      height: 300px;
+    }
+
+    .shrink {
+      max-width:70%;
+      max-height:70%;
+    }
+
+    .articleAlign {
+      padding-top: 20px;
+      width:250px;
+      position: relative;
+      z-index: 10;
+      text-align: left;
+      word-wrap:normal;
+      left:260px;
+    }
+
+    #articleLinks {
+      height:60px;
+      margin:30px;
+      width: 400px;
+      border-radius: 50px;
+    }
+
+  </style>
+</head>
   <body>
-      Hello DBC!
+    <header id = "top_header">
+      <h1 style = font-family:"Orbitron"; align="center">El Dev</h1>
+    </header>
+    <nav class="articleLinks">
+      <a href="jlesse.github.io/index.html">Home</a>
+      <a href="/projects">Projects</a>
+      <a href="jlesse.github.io/blog/index.html">Blog</a>
+      <a href="/AboutMe">About Me</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  <section class="leftSection">
+  <img class="shrink" src = "file:///Users/julianlesse/devbootcamp/phase0/my-website/Jlesse.github.io/imgs/me.jpg" alt="a picture of me"/>
+    <nav id="articleLinks">
+      <a id ="linkPad" href="/Projects"><strong>Projects</strong></a>
+      <a href="/Blog">Blog</a>
+      <a href="/Conact">Contact me</a>
+    </nav>
+  </section>
+  <article class="articleAlign" >
+      <h3><i>Julian Lesse</i></h3>
+      <p>
+        I am new student of web development. I am currently attending Dev Bootcamp, and making my way through the phase 0 portion. I plan to update this site more in the future and provide more links to projects I am working on or have completed. Feel free to contact me or check out my blog, I would love to hear from you!
+      </p>
+  </article>
+
+
+
   </body>
 </html>
