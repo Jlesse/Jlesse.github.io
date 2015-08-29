@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <title>El Dev</title>
   <style>
@@ -13,6 +13,10 @@
     #top_header {
       background-color:#E8BEB6;
       height: 50px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      font-family: "Orbitron";
+      text-align: center;
     }
 
     li {
@@ -35,7 +39,7 @@
     nav {
       height: 30px;
       background-color:#B7E81F;
-    }
+      }
 
     .leftSection {
       margin-top: 20px;
@@ -66,36 +70,58 @@
       height:60px;
       margin:30px;
       width: 400px;
-      border-radius: 50px;
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
+
+    #foot {
+      width: 100%;
+      height: 80px;
+      padding: 1px;
+      border-radius: 35px;
+      position: fixed;
+      background-color: #E8B5B3;
+      bottom: 0;
+      z-index: -100;
+      padding-left: 30px;
+      padding-top: 30px;
+  }
 
   </style>
 </head>
   <body>
     <header id = "top_header">
-      <h1 style = font-family:"Orbitron"; align="center">El Dev</h1>
+      <h1>El Dev</h1>
     </header>
     <nav class="articleLinks">
-      <a href="jlesse.github.io/index.html">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="jlesse.github.io/blog/index.html">Blog</a>
-      <a href="/AboutMe">About Me</a>
-      <a href="/contact">Contact</a>
+      <a href="./index.html">Home</a>
+      <a href="./projects">Projects</a>
+      <a href="./blog/index.html">Blog</a>
+      <a href="./AboutMe">About Me</a>
+      <a href="./contact">Contact</a>
     </nav>
   <section class="leftSection">
-  <img class="shrink" src = "file:///Users/julianlesse/devbootcamp/phase0/my-website/Jlesse.github.io/imgs/me.jpg" alt="a picture of me"/>
+  <img class="shrink" src = "./imgs/me.jpg" alt="a picture of me"/>
     <nav id="articleLinks">
-      <a id ="linkPad" href="/Projects"><strong>Projects</strong></a>
-      <a href="/Blog">Blog</a>
+      <a id ="linkPad" href="/Projects">Projects</a>
+      <a href="./blog/index.html">Blog</a>
       <a href="/Conact">Contact me</a>
     </nav>
   </section>
   <article class="articleAlign" >
       <h3><i>Julian Lesse</i></h3>
       <p>
-        I am new student of web development. I am currently attending Dev Bootcamp, and making my way through the phase 0 portion. I plan to update this site more in the future and provide more links to projects I am working on or have completed. Feel free to contact me or check out my blog, I would love to hear from you!
+        I am a new student of web development. I am currently attending Dev Bootcamp, and making my way through the phase 0 portion. I plan to update this site more in the future and provide more links to projects I am working on or have completed. Feel free to contact me or check out my blog, I would love to hear from you!
       </p>
   </article>
+    <footer id="foot">
+    <img src="./imgs/github10.png" alt= "github pic">
+    <img src="./imgs/google110.png" alt ="google+ pic">
+    <img src="./imgs/linkedin1.png" alt ="linked in pic">
+    <img src="./imgs/logo22.png" alt="twitter pic">
+    <img src="./imgs/email5.png" alt ="e-mail pic">
+    <a href="http://www.freepik.com">Icons by freepik.com</a>
+  </footer>
 
 
 
