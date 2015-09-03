@@ -6,7 +6,7 @@ implement? What was most difficult?
 What did you learn about adding and formatting
 elements with CSS in this challenge?
 
-[HERE IS MY SITE](https://github.com/jlesse/jlesse.github.io/)
+[HERE IS MY SITE](https://jlesse.github.io/)
 
 I learned that CSS is very frustrating. Haha, just
 kidding... sort of. I had a lot difficulty
