@@ -1,0 +1,13 @@
+.blogArtStyle {
+padding-left: 40%;
+font-size:120%;
+}
+.sectAlign {
+z-index: 1;
+padding-top: 3%;
+padding-left: 5%;
+font-family: 'Lobster', cursive;
+}
+.buttonMargin {
+  margin-right: 5%;
+}
