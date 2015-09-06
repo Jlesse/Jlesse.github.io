@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS positioning</title>
+  <link rel="stylesheet" type="text/css" href="css-concepts.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > CSS Positioning
+</nav>
+<header id="head">
+</header>
+<section>
+    <h2 id = "center">CSS positioning</h2>
+</section>
+<section id = "blogList">
+  <p class ="linkHeader">Blog Posts</p>
+  <ul>
+    <li><a href="./c1-chefs-kitchen.html">The Chef's Kitchen</a></li>
+    <li><a href="./t1-git-blog.html">The Git Flow</a></li>
+  </ul>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <p>
+      Working with CSS can be a little confusing at first. Some may even say that it flat out sucks. However, I think that once some basic ideas about positioning are understood, it makes it much easier to get CSS to do what you want it to, even if still does suck.
+    </p>
+    <p>
+      There are four position properties in CSS: static, relative, fixed and absolute.... And a bonus one: inherit! You can position elements in CSS by using "position:_____" where the underscores stands in for either static, relative, absolute, fixed or inherit. By default all elements are static. Static elements are unaffected by the top, bottom, left, and right properties. Their position is determined by their placement within the flow of the HTML code (the normal flow), then by the size, padding, margin, border, of the element itself and those around it. This is probably not what you are looking for, though it can be used used for a single column layout if you just want to stack elements one on top of another.
+    </p>
+    <figure>
+    <img src="./imgs/static.png">
+    <figcaption> All elements are static, and stack on top each other in the order of the normal flow.</figcaption>
+  </figure>
+    <p>
+      Elements with relative positioning offer relatively more positioning capability. Get it? Yeah okay, it was corny, moving on. With a relative positioned element you can position elements using the top, bottom, left, and right properties. When these properties are applied the element will move relatively in that direction from where the element would be by default. Relative positioning can also be used to create a coordinate system for its child elements (elements that are inside of it).When you place one element inside of another, the bounding box for that element becomes the outer element, or parent. You can then move the element from its default position inside of the parent element.
+    </p>
+    <figure>
+    <img src="./imgs/relative.png">
+    <figcaption>Div 1 is relative, and has moved to the right of its original position. Div 2 acts as though div 1 was still in its original position.</figcaption>
+    </figure>
+    <p>
+      Absolute elements are removed from the normal flow. They can be placed anywhere and won't interact with other element in the flow. they also respond to the top, bottom, left and right offset properties. Like relative elements, they are offset relative to their parent elements. They can also create a coordinate system for any child elements. The absolute position property gives you the ability to stretch an element without even defining a width or height. It is stretched relative to its parent using the offset property.
+    </p>
+    <figure>
+    <img src="./imgs/absolute.png">
+    <figcaption> div 2 is removed from the normal flow and pushed down from the top and pushed from the the left side using top and left offsets. It is unaffected by div 3, and overlaps.</figcaption>
+    </figure>
+    <p>
+      A fixed element behaves almost exactly like an absolute element, except that a fixed element is fixed to the viewport (browser window). The viewport positions the element instead of any parent element, and it moves with the viewport when it is resized or scrolled through. They can also be stretched like absolute elements. One downside is that some older browsers render fixed elements as static. There are ways around this, and I think normalize.css should help with this.
+    </p>
+    <figure>
+    <img src="./imgs/fixed.png">
+    <figcaption>Div 3 is fixed to the top of the viewport. It acts somewhat like an absolute element because it is unaffected by other elements, such as div 1.</figcaption>
+    </figure>
+    <p>
+      The fifth, I mean bonus, position is inherit. Typically elements do not inherit their parent position properties, and are given static by default. You can assign the the inherit position to an element, and, surprise, it will inherit its parents position property. The child's position property will change when the parents position property changes.
+    </p>
+    <img src="./imgs/inherit.png">
+    <figcaption>Div 4 has inherited its relative position from its parent, Div 2. It is offset from the left side of its parent element by 3 em.</figcaption>
+    </figure>
+    <p>
+      Understanding the behavior of positioning properties should give you a real leg up when working with CSS. No more guess and check, and shoving the box in the thing with that other thing in the way for no clear reason. Good luck and I hope this was helpful.
+    </p>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>

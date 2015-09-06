@@ -5,9 +5,18 @@ font-size:120%;
 .sectAlign {
 z-index: 1;
 padding-top: 3%;
-padding-left: 5%;
+padding-left: 2%;
 font-family: 'Lobster', cursive;
 }
 .buttonMargin {
   margin-right: 5%;
+}
+
+.blogList {
+  width: 8em;
+}
+
+.blogPostHeader{
+  position: relative;
+  left:2em;
 }
