@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hashes and Arrays</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > Arrays and Hashes
+</nav>
+<section>
+    <h2 id = "center"></h2>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <h1>Hashes and Arrays for Breakfast</h1>
+    <h4>September 11th, 2015</h4>
+    <p>
+      What is a hash? No it doesn't come with eggs though you could put "eggs" into it. It probably sounds a little strange but its actually not all that bad, in this article I will explain how and why to use arrays and hashes.
+    </p>
+    <p>
+      Most programming languages have collections. They are used for (surprise!) collecting data. There are a few types of collections in ruby including: ranges, arrays, hashes, sets. In this article our focus will be on hashes and arrays.
+    </p>
+    <p> What do collectors do with their collections? They organize them, they sometimes pull out a prized item to show off, sometimes they remove an item if they want to sell it to another collector, amongst many other things. Similarly, you would organize, access, and modify your collections in ruby.
+    </p>
+    <p>
+      Lets shift our focus now to the more literal applications of using collections in ruby, specifically arrays and hashes. For example, you keep a list of things you had for breakfast each week (why are you keeping a list of breakfasts? Thats weird...) and today is Monday and you want to add your first breakfast item of the week, eggs. Do we want to use an array or a hash to store this list? There are few ways you could go about this, neither is necessarily right or wrong.
+    </p>
+    <p> Arrays and hashes at fundamental level do the same thing, they allow you to access a stored value with a key. In the case of a hash, the key can be defined by the programmer, for arrays the key will always be an integer value. This integer is known as an index, the value stored at that index is called an element. The hash equivalent would be a key instead of and index, and just a value instead of element. Indexing for arrays begins at 0.
+    </p>
+    <figure>
+    <img src="./imgs/array.gif" alt="an array">
+    <figcaption>A visual representation of an array
+      <a href="http://java67.blogspot.com/2014/05/how-to-compare-two-arrays-in-java-string-int-example.html"> picture from java67.blogspot.com/</a>
+    </figcaption>
+    </figure>
+    <p>
+      Hashes are quite similar, but look slightly different.
+    </p>
+    <figure>
+      <img src="./imgs/hash.png" alt="a hash">
+      <figcaption>Hashes use unique keys as their indices. <a href="https://developers.google.com/edu/python/dict-files"> Picture from developers.google.com</a></figcaption>
+    </figure>
+    <p>
+      Now that we have a little bit of an idea about the difference between hashes and arrays, lets figure out which one we want to use to store your breakfast list.
+    </p>
+    <p> Lets try an array first. We might want to use an array because this is a simple list. Our breakfast items could be put in the list and stored in order of the days in the week. Monday's breakfast would be at index 0, Tuesday's at 1, all the way up to Sunday's at index 6. Lets take a look at what it this would look like.
+    </p>
+    <figure>
+      <img src="./imgs/arrayExample.png">
+    </figure>
+    <p>
+      looks good! but maybe you don't want to index your breakfasts by just an integer, what if you want to to use the days of the week instead. Lets use a hash so we can store and retrieve our eggs with the key "Monday".
+    </p>
+    <figure>
+      <img src="./imgs/hashExample.png">
+    </figure>
+    <p>
+      Now you known the basics of arrays and hashes in ruby. Keep in mind that there are a lot of different ways to implement and use arrays and hashes. Check out the Ruby Docs to see more ways to store your breakfasts.
+    </p>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>
