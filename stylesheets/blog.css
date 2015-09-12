@@ -1,22 +1,70 @@
-.blogArtStyle {
-padding-left: 40%;
-font-size:120%;
-}
+
 .sectAlign {
+display: block;
+position: relative;
 z-index: 1;
 padding-top: 3%;
 padding-left: 2%;
-font-family: 'Lobster', cursive;
+top: 25%;
 }
-.buttonMargin {
-  margin-right: 5%;
+
+.blogLink {
+  color: #000000;
+  text-decoration: none;
 }
 
 .blogList {
-  width: 8em;
+  display:block;
+  position:relative;
+  top: 5%;
+  left: 25%;
 }
 
-.blogPostHeader{
+body {
+  height: 800px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.blogHeadText{
+  display: block;
   position: relative;
-  left:2em;
+  left: 40%;
+  top: 5%;
+  width:10em;
+}
+
+
+
+.blogPostSection{
+  color: #000000;
+  position: relative;
+  top: 20%;
+  width: 40em;
+  height: 40em;
+  background-color: #B2B2B2;
+  left:12%;
+  top: 15%;
+
+  border-radius: 50%;
+}
+
+
+.content{
+  display: block;
+  position:relative;
+  width: 100%;
+  height: 100%;
+}
+
+.blogFoot {
+  width: 100%;
+  height: 80px;
+  padding: 1px;
+  border-radius: 35px;
+  position: absolute;
+  background-color: #787B7F;
+  top: 120%;
+  padding-left: 30px;
+  padding-top: 30px;
 }
