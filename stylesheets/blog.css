@@ -8,6 +8,20 @@ padding-left: 2%;
 top: 25%;
 }
 
+.projectsTextAlign{
+  display: block;
+position: relative;
+z-index: 1;
+padding-top: 3%;
+padding-left: 2%;
+top: 25%;
+}
+
+.linker {
+  text-decoration: underline;
+  font-style: italic;
+}
+
 .blogLink {
   color: #000000;
   text-decoration: none;
