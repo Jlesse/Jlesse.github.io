@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+<html>
 <head>
-  <title>Julian's dev blog</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <title>The Git Flow</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
 </head>
-
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > The Git Flow
+</nav>
+<section>
+    <h2 id = "center">The Git Flow</h2>
+</section>
 <main>
-  <h1>Working with Git and Github</h1>
-  <h2><i>just the basics</h2>
-  <h4>August 22nd 2015</i></h4>
-
   <section>
-    <p>
-        This past week I dove head first into learning Git and Github verision control, and its been very interesting, but its also been pretty big headache. This stuff can be very confusing at first, but I think I am starting to get the flow. I will try and convey some of what I learned this week and go over some basic commmands.
+  <article id ="blogtext">
+     <p>
+        This past week I dove head first into learning Git and Github version control, and its been very interesting, but its also been pretty big headache. This stuff can be very confusing at first, but I think I am starting to get the flow. I will try and convey some of what I learned this week and go over some basic commands.
     </p>
     <p>
-        I think its important to get a feel for the flow of the Git and ithub process. I will go over the steps and then give some sample commands and a breif explanation  of what they do.
+        I think its important to get a feel for the flow of the Git and Github process. I will go over the steps and then give some sample commands and a brief explanation  of what they do.
     </p>
     <p>
         <h4>The flow seems to be something like this.</h4>
@@ -23,21 +28,21 @@
           <li>Clone from Github to your local machine.</li>
           <li> Make and checkout a branch.
           </li>
-          <li>  Make any neccesary changes within that branch.
+          <li>  Make any necessary changes within that branch.
           </li>
           <li> Add the changes to the staging area.
           </li>
-          <li> Commit the branch with a desciprtive message.
+          <li> Commit the branch with a descriptive message.
           </li>
-          <li>Push the branch to github.
+          <li>Push the branch to Github.
           </li>
-          <li>Go to the github repo and make a pull request.</li>
-          <li>Merge the branch with the master on github.
+          <li>Go to the Github repo and make a pull request.</li>
+          <li>Merge the branch with the master on Github.
           </li>
-          <li>delete the branch on github.
+          <li>delete the branch on Github.
           </li>
           <li>delete the branch on your local machine. </li>
-            <li>Pull from github to update your master.</li>
+            <li>Pull from Github to update your master.</li>
         </ol>
     </p>
     <h2><i>Here is the flow in the terminal </i></h2>
@@ -56,7 +61,7 @@
           week-1 [new-branch] :> git add . <b>#add changes to staging area</b>
         </li>
         <li>week-1 [new-branch] :> git commit -m "add random change" <b>#commit branch</b></li>
-        <li>week-1 [new-branch] :> git push -u origin new-branch <b>#tell git hub about branch and push it up in current state, now a pull request can be submitted with this branch on github, and may be deleted after merging, both remotely and locally.</b></li>
+        <li>week-1 [new-branch] :> git push -u origin new-branch <b>#tell git hub about branch and push it up in current state, now a pull request can be submitted with this branch on Github, and may be deleted after merging, both remotely and locally.</b></li>
         <li><b> go to Github, make a pull request, and merge branch, then delete old branch</b></li>
         <li>week-1 [new-branch] :> git checkout master <b>#go to master branch</b>
         </li>
@@ -65,7 +70,23 @@
       </ol>
     </p>
     <p> I hope that was helpful :)</p>
-
-  </section>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
 </main>
-
+  </body>
+</html>
