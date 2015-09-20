@@ -1,18 +1,21 @@
+
+
+
 breakfasts = ["Eggs!", "Eagle Eggs!!", "Pizza", "Potato chips", "Pancakes", "Cereal", "Cookies" ]
 
-#grouped by first letter
+# #grouped by first letter
 
-first_letter_enum = breakfasts.group_by { |breakfast|
-  breakfast[0]}
+# first_letter_enum = breakfasts.group_by { |breakfast|
+#   breakfast[0]}
 
-puts first_letter_enum
+# puts first_letter_enum
 
-#grouped by length
+# #grouped by length
 
-length_enum = breakfasts.group_by {|breakfast|
-  breakfast.length}
+# length_enum = breakfasts.group_by {|breakfast|
+#   breakfast.length}
 
-puts length_enum
+# puts length_enum
 
 #grouped by common element "!"
 
