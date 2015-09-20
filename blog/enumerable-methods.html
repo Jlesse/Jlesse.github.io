@@ -1,21 +1,81 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hashes and Arrays</title>
+  <title>Group_by</title>
   <link rel="stylesheet" type="text/css" href="./blog-template.css">
 </head>
   <body>
   <nav class="breadcrumb">
     <a href="../index.html">Home</a> >
     <a href="./index.html">Blog List</a>
-    > BLOG NAME HERE
+    > How To Use Group_by
 </nav>
 <section>
-    <h2 id = "center"></h2>
+    <h2 id = "center">How To Group_by</h2>
 </section>
 <main>
   <section>
   <article id ="blogtext">
+    <iframe src="http://giphy.com/embed/DtXfTSHi6mHFS" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/homer-simpson-breakfast-the-simpsons-DtXfTSHi6mHFS">via GIPHY</a></p>
+    <p>
+      Enumerables are pretty effin cool huh? They are very useful and are packed full of useful methods for your programming pleasure. There are so many good ones, but today we are going to zero in on one in particular. The enumerable method  group_by groups a collection by the result of the block. Group_by returns a hash with keys that are the evaluated result from the from the block, and each key is paired with an array of values the correspond to that key. Probably sounds a little confusing. Lets do some examples to see what really going on here.
+    </p>
+    <p>
+    Lets create a list of what you ate breakfast this week. I think an array would be good way to do that.
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/breakfast_array.png">
+    </figure>
+    <p>
+      Man, That looks like a rough diet! No judgment here though, you do you... Eagle eggs though...Really? Okay, forget about it, moving on. Lets try and group these so called breakfasts. First things first! lets group it by the first letter...first
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/group_by_1st_let.png">
+    </figure>
+    <p>
+       We create a variable called first_letter enum. We assign it the value returned by breakfasts.group_by. In our group_by block, breakfast stands in for each string in the array as we iterate through it. Breakfast[0] tells the group_by method that we are grouping the words by the 0th index of each string AKA the first letter.
+    </p>
+    <p> And here is what the terminal output looks like.
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/1st_letter_output.png">
+    </figure>
+    <p> Each breakfast item is in an array paired with a key corresponding to the first letter of the breakfast items. I think that makes pretty good sense...Besides the eagle eggs part, I still don't get that.
+    <p>
+    <p>Lets do a couple more examples just to really ingrain how group_by works, but also to maybe help you rethink your nutritional choices.
+    </p>
+    <p>
+    Group by length:
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/group_by_length.png">
+      <figcaption>.length returns the length of a the string</figcaption>
+    </figure>
+    <p>
+      Output:
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/length_output.png">
+    </figure>
+    <p>Group by a common element (in this case "!" because apparently someone like to yell about eggs a lot.):
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/group-by-common.png">
+      <figcaption>.include returns true if the substring argument is in the string, else false</figcaption>
+    </figure>
+    <p>
+      Output:
+    </p>
+    <figure>
+      <img src="./imgs/enum-meth-imgs/common-output.png">
+    </figure>
+    <p>
+      Hopefully these examples were helpful. you can see from the examples that group_by returns an enum that pairs each value with the key that is returned from the statement inside the code block.
+      In the final example, all the strings that returned true for the include? method inside the block, are in one array and paired with the key true. All the strings that returned false for .include? are in another array and paired with false.
+    </p>
+    <p>
+      So now you can use group_by to sort all your breakfasts. You have also hopefully been shamed into eating some quinoa or hemp seeds once in a while, or at the very least maybe stopping the whole eagle egg thing. Good luck grouping!
+    </p>
   </article>
 </section>
 <section>
