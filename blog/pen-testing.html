@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Penetration Testing</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > Penetration Testing
+</nav>
+<section>
+    <h2 id = "center">Penetration Testing</h2>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <iframe src="http://giphy.com/embed/1230rTAtEjLyLu" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/hacking-1230rTAtEjLyLu">via GIPHY</a></p>
+    <p>
+    Cyber security is a very broad and deep topic, and even the subsection of penetration testing takes a long while to understand and become well versed in. I will cover just some of the basics, as far as I understand them.
+  </p>
+  <p>
+The purpose of cyber security is to protect networks, computers, and applications from data attack, damage, or unauthorized access. A good way to reduce your vulnerability to an attack is to keep all of your software, browsers, plugins, EVERYTHING, up to date. Frequently, black hat hackers (the bad guys)  will find or learn of an exploit (a bug that allows a hack) and use that exploit to steal personal information, launch a DDoS attack, or do any number of malicious things. Usually a patch is released pretty quickly once an exploit is circulated online. If you keep yourself up to date, than you close these security holes the minute they are fixed. When a vulnerability is discovered, and the patch has not yet been made, the vulnerability is called a zero day. Usually zero days are unpatched because the software vendor has no idea that they even exist. This is where white hat hackers (the good guys) and penetration tests come in.
+</p>
+<p>
+Zero day vulnerabilities can be sold to software vendors for thousands to hundreds of thousands of dollars so they may be patched. HP and Apple both have programs actively buying zero days. It is also known that the NSA researches and finds zero days, but as a mostly offensive organization, they do not typically notify the vendors, but instead exploit the security holes. Sometimes zero days are exploited just so the vendor becomes aware of it and fixes it. Recently a hack was demonstrated on a wifi connected 2014 Jeep cherokee. The hack was capable of producing such an imminent amount of danger to car owners that Chrysler recalled 1.4 million vehicles. Uber is now working with the security researchers to increase automotive cyber security. As the internet finds its way into more and more aspects of our lives, its important to know how to protect yourself from hacks, and as a developer how to prevent and stop them.
+</p>
+<p>
+Penetration testing is a powerful technique for testing the security of networks, computers, and software. Penetration testers use packet analyzers, password crackers, web app security scanners, the list goes on and on. In fact there are operating systems designed primarily for penetration testing that include these kinds of programs. Kali linux is a free linux distribution for penetration testing; it comes with over 600 pre-installed penetration testing programs. I have mixed feelings about Kali because while it makes these tools easily available to amateur penetration testers, it also makes them more available to malicious individuals. I think in a paradoxical way, Kali makes the internet both safer and more dangerous. If you are interested in experimenting with Kali, you can easily install it on a virtual box on your machine.
+</p>
+
+<h3>A penetration test has 6 primary goals.</h3>
+
+<ol>
+<li>Determine feasibility of a particular set of attack vectors.</li>
+
+<li>Identify high-risk vulnerabilities from a combination of lower-risk vulnerabilities exploited in a particular sequence.</li>
+
+<li>Identify vulnerabilities that may be difficult or impossible to detect with automated network or application vulnerability scanning software.</li>
+
+<li>Assess the magnitude of potential business and operational impacts of successful attacks.</li>
+
+<li>Test the ability of network defenders to detect and respond to attacks.</li>
+
+<li>Provide evidence to support increased investments in security personnel and technology.</li>
+
+</ol>
+
+
+<p>
+The string that unravels the whole yarn is a small vulnerability, that when combined creates big vulnerabilities with unintended consequences. It is easy to overlook these vulnerabilities during development, especially if you are untrained in them. As an aspiring web developer, I am also an aspiring security professional. We need to build a more secure and open web.
+</p>
+<p>
+I will give a brief non technical example of how development effects security.
+One of the most common attacks today is the SQL injection attack. We haven't covered SQL yet, but basically SQL is used for writing and managing databases. SQL injections are common because SQL injection vulnerabilities are common, databases often contain critical information, and the approach is well known amongst hackers. SQL injections can insert names or modify information in the database in order to gain new permission, shut down servers, or just generally kind of fuck things up.
+</p>
+
+<p>
+Believe it or not, that attack plan begins with google. Hackers use google dork to search for a site with vulnerabilities. They will then launch the attack and search for sensitive information. You can simply find a website with possible vulnerabilities by entering in to goole any of the following
+</p>
+<ul>
+ <li>inurl:index.php?id=</li>
+ <li>inurl:gallery.php?id=</li>
+ <li>inurl:article.php?id=</li>
+ <li>inurl:pageid=</li>
+</ul>
+<p>
+and google returns a list of sites with possible security holes. Fortunately we can defend against attacks and develop more secure software. Here is a link to the SQL injection prevention cheat sheet (Links to an external site.). This is just one way hackers can compromise your personal or business security. Its important to educate yourself on security issues and stay current with whats happening in the security world as a developer. Not only will you maker a safer internet for everyone, but you make yourself more valuable to an employer as someone who can produce secure applications. I am just learning all of this as well, so if you have any cool info to pass on or want to talk about anything, I would love to. I feel like I am just entering the rabbit hole of web development and security and it's really exciting. Good luck and stay safe.
+</p>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>
