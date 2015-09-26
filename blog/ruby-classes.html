@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Classes, Objects, and The Dude</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > Classes, Objects, and The Dude
+</nav>
+<section>
+    <h2 id = "center"></h2>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <h3>Classes, Objects, and The Dude
+    </h3>
+    <p>
+      Ruby is an object-oriented programming language. You may be wondering, what does that even mean? In the most basic sense, it means Ruby's programming focus is on objects which possess attributes and methods. Attributes are information about the object's state. If you create a car as a Ruby object, it might have an attribute specifying the color. Attributes are often thought of as nouns; methods, on the other hand, are thought of as verbs. For example, using the same car analogy, the car object might have a method named drive, which instructs the car object to begin driving.
+    </p>
+    <p>Classes give us what we need to create objects. Classes are like blueprints, you reuse the class structure to create new objects that are unique but share the same methods and attributes. Some objects may be made from the same class, but when an attribute is modified in one object it does not change the attribute in another object made from the same class (unless the attribute is a global variable or class variable). That is part of the beauty of OOP (object-oriented programming) which is known as Encapsulation. Data and functions are packed into a single unit, and you have control over what can be seen, changed, or used.
+    </p>
+    <p>Lets look at an example. Lets create a Person class. What kind of attributes should the person class have? Sure there could be an infinite amount, but lets try keep this simple. For our purposes a person has an age, a name, a location, and they are either hungry or not hungry. Lets see what that might look like in ruby.
+    </p>
+    <figure>
+      <img src="./imgs/ruby-class-imgs/class-example.png">
+    </figure>
+    <p>
+      Here we have declared a class named Person, and written an initialize method. Inside the initialize method are all of the attributes of the class. These attributes are called instance variables. They exist within a single instance of the object. Instance variables must begin with an @ symbol. An initialize method is used to start a program off in a specific state and create all of the instance variables. Its not required, but 99% of the time you will want to use an initialize method.Values can be passed into the initialize method to assign to the instance variables. In this case we can pass in age, name, location, and hunger. We are only using instance variables in this example because we want to keep the access of the variables contained in the object. If we used global or class variables, they would be available outside of the object or class. Its a good idea to use an instance variable if the variable holds important information about the state of the object, or the variable is used in the class in multiple methods. If the variable is only used inside one method, its probably best to define that variable inside that method. In the case the variable is defined inside a method, it is a local variable, and can only be accessed inside that method. The variables scope (where it can be accessed) would be the method body.
+    </p>
+    <p>Now lets create some methods that allow this person do things. People like doing all kinds of things, but lets keep it simple. People eat, sleep, and work. Hopefully most people do more than that, but thats all that the people from our Person class do. What would this look like?
+    </p>
+    <figure>
+      <img src="./imgs/ruby-class-imgs/method-example.png">
+    </figure>
+    <p>
+      Here we have defined 3 methods. Eat, work, and sleep. They are all instance methods becuase they are defined inside the class, and an instance of the class may use them. Eat takes a parameter named food_item. If the person is hungry(if hungry is true), then the person will eat and say "Yum yum, I was hungry. That was good (whatever food_item was)!", and then the hunger instance variable will be set to false since the person is not hungry anymore. If they are not hungry (If hungry is false), they will say "I am not hungry!". Work just makes the person say "work work!". In the sleep method, If the person is hungry they will "I am too hungry to sleep! feed me!". If they are not hungry they will say puts "ZZZZZZZ(snore)". A pretty simple person, but hey, it works for our purposes. You can see how these methods are like actions. They allow the person to do things. The instance variables might change based on these actions, like the hunger variables for example.
+    </p>
+    <p>
+      Now that we have defined our methods, lets call them.
+    </p>
+    <figure>
+      <img src="./imgs/ruby-class-imgs/object-call-example.png">
+    </figure>
+    <p>
+      when say dude = Person.new(25,"theDude", "Chicago", true), we have created a new object of type person. The dude objects age is 25, its name is "theDude", the location is "Chicago", its hunger status is true. when we call dude .work, the dude say "work work!" when we try to sleep, he complains because he is hungry. when we feed him eggs he says he likes them. when we try to make him sleep again, he goes to sleep because he is no longer hungry.
+    </p>
+    <p>
+      The dude object posses all of the methods and attributes of the Person class. we call them with object-name.method-name. Thats what you see me do when I say dude.eat for example.
+    <p>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>

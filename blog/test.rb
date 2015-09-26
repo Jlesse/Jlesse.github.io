@@ -24,3 +24,5 @@ common_element_enum = breakfasts.group_by { |breakfast|
 }
 
 puts common_element_enum
+puts " "
+puts breakfasts
