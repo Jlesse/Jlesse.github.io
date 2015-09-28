@@ -83,6 +83,21 @@
     height: 3em;
 }
 
+.linkPadder4index {
+    display: inline-block;
+    position: absolute;
+    right:25%;
+    bottom:60%;
+}
+.linkPadder5index {
+    display: inline-block;
+    position: absolute;
+    bottom: 0em;
+    left: 75%;
+    width: 6em;
+    height: 3em;
+}
+
 @media screen and (max-width: 1227px) and (min-width: 1037px) {
 .linkPadder4 {
     right:25%;
