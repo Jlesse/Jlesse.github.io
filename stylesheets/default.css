@@ -83,6 +83,48 @@
     height: 3em;
 }
 
+@media screen and (max-width: 1227px) and (min-width: 1037px) {
+.linkPadder4 {
+    right:25%;
+    bottom:60%;
+}
+.linkPadder5 {
+    bottom: 0em;
+    left: 80%;
+}
+}
+
+@media screen and (max-width: 1036px){
+.linkPadder4 {
+    top:10%;
+    right:25%;
+    bottom:60%;
+}
+.linkPadder5 {
+    bottom: 0em;
+    left: 85%;
+}
+}
+
+@media screen and (max-width: 945px){
+.linkPadder4 {
+    top:10%;
+    right:25%;
+    bottom:60%;
+}
+.linkPadder5 {
+    left: 85%;
+    top: 30%;
+}
+}
+@media screen and (max-width: 736px){
+
+.linkPadder5 {
+    left: 85%;
+    top: 20%;
+}
+}
+
 .leftName{
   margin: 0;
   position: absolute;
