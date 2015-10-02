@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ruby classes vs. JavaScript constructors</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > Ruby classes vs. JavaScript constructors
+</nav>
+<section>
+    <h2 id = "center"></h2>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <p>
+      This last week while learning JavaScript, I noticed a lot of similarities between JavaScript and Ruby. Ruby hashes resemble object literals in JavaScript and they can be accessed in similar ways. I realized that the JavaScript constructor function strongly resembles the initialize method in Ruby. While I noticed many similarities, believe me, I took into account some of the stark differences.
+    </p>
+    <p>
+      Lets examine the syntax and the functionality of the a Ruby class with an initialize method and JavaScript constructor. In JavaScript the object constructor is the function that acts as the template for instantiation of new objects. There aren't really classes in the typical object-oriented sense in JavaScript. Prototypes are used instead. The ability to create classes with the class keyword is very recent and was only added this year with ECMAScript 2015. Most JavaScript programmers have not adopted this style yet (if they will at all), and it may not even be supported in many browsers. Regardless I will only cover creating prototypes with the constructor function.
+    </p>
+    <p>
+      In ruby, classes are created using the class keyword. Objects may be created from the class using the new keyword. The initialize method inside of ruby class body is somewhat similar to the JavaScript constructor.They both specify all of the variables that any new object will posses and what their initial values will be. However, in JavaScript functions my be defined or added to a variable with a handle inside the constructor. If a new object is to posses a method in ruby, the function should be defined in the ruby class body, but outside of the initialize function.
+    </p>
+    <p>Ruby is a class based language, JavaScript is not. In ruby every object is created from a class. In JavaScript objects are created from prototypes.
+    In ruby an objects properties are hidden unless made public with an attr_accessor. In JavaScript an objects properties are public by default.
+    <p>
+    <p>
+      So what does this all look like? Lets look at a the creation of a ruby class and object in contrast with the JavaScript equivalent.
+    </p>
+    <figure>
+      <img style ="width:800px;" src="./imgs/ruby_vs_javascript.png">
+    </figure>
+    <p>Both of these simple programs do essentially the same thing. The one on the left was written in JavaScript, and the one on the right was written in ruby. They both create a Person template. In the JavaScript version it is called a prototype and done with an object constructor. In ruby it is called class, and done with the class keyword and the initialize method. In the JavaScript example we assign attributes to the object in Person function. The "this" keyword identifies the variable as an instance variable. In ruby we do the same thing but within the initialize method, and instance variables are identified by the @ marker. In JavaScript, we define any functions that the prototype possesses by defining it in the constructor. There are a few ways to do this, but I used the "this" keyword to identify that the variable belongs to the prototype, and I assigned the variable an anonymous function that increments age and prints a happy birthday message. In ruby, I simply defined the happy_birthday message inside the class body, and therefore, any object of that class my possesses that method.
+    </p>
+    <p>
+      Next is my driver code, where I actually create my objects and call my method. The syntax here is actually pretty similar. In JavaScript I create a variable named dude and assign it the new person object, and pass in an age and name. Dude is now an object of the prototype, and can call the happy birthday method. dude.happy_birthday will increment the dude's age and print out a birthday message. Like in JavaScript, in ruby we create the dude variable and assign it a new instance of the Person class. The syntax is slightly different though, we use Person.new(name, age) instead of new Person(name, age). We can now call the birthday message from the dude object in ruby as well.
+    </p>
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>
