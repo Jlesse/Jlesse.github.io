@@ -300,18 +300,37 @@ function exclaim(){
 }
 
 //Reflection
-/*
-What was the most difficult part of this challenge?
 
-I had a lot of difficult dealing with the flow of the game. It was hard to implement the methods how I wanted to and have the game execute properly. I had to implement timers, and learn closures. I had lot of issues with the scope of method calls when I wrote HTML code to the DOM that executed JavaScript. It really was a handful, but I want to come back to again in the future and develop the game into something a little better looking and more sophisticated.
+// What was the most difficult part of this challenge?
 
-What did you learn about creating objects and functions that interact with one another?
+// I had a lot of difficult dealing with the flow of the game. It was
+// hard to implement the methods how I wanted to and have the game
+// execute properly. I had to implement timers, and learn closures. I had
+// lot of issues with the scope of method calls when I wrote HTML code to
+// the DOM that executed JavaScript. It really was a handful, but I want
+// to come back to again in the future and develop the game into
+// something a little better looking and more sophisticated.
 
-I learned that functions must be defined within in the scope of the object if they are to be called from that object. This is why when I do method the timeout method calls, I assign the this variable to self and pass it into the closure before execution so that the method will execute in the proper scope instead of the Window object. I learned a lot about how to dynamically create and change objects, and use functions to manipulate the data inside of a function.
+// What did you learn about creating objects and functions that interact
+// with one another?
 
-Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
+// I learned that functions must be defined within in the scope of the
+// object if they are to be called from that object. This is why when I
+// do method the timeout method calls, I assign the this variable to self
+// and pass it into the closure before execution so that the method will
+// execute in the proper scope instead of the Window object. I learned a
+// lot about how to dynamically create and change objects, and use
+// functions to manipulate the data inside of a function.
 
-My code is not yet totally refactored. I had so much code and I ran out of time to finish refactoring. I did change the code so that the battle would write to one div and the story to another to make is easier to read and more interesting looking.
+// Did you learn about any new built-in methods you could use in your
+// refactored solution? If so, what were they and how do they work?
 
-How can you access and manipulate properties of objects?
-you can access objects with dot notation by saying object.property = "changed property". You could also use bracket notation like object["property"] = "changed value";*/
+// My code is not yet totally refactored. I had so much code and I ran
+// out of time to finish refactoring. I did change the code so that the
+// battle would write to one div and the story to another to make is
+// easier to read and more interesting looking.
+
+// How can you access and manipulate properties of objects? you can
+// access objects with dot notation by saying object.property = "changed
+// property". You could also use bracket notation like object["property"]
+// = "changed value";
