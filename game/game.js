@@ -314,4 +314,4 @@ Did you learn about any new built-in methods you could use in your refactored so
 My code is not yet totally refactored. I had so much code and I ran out of time to finish refactoring. I did change the code so that the battle would write to one div and the story to another to make is easier to read and more interesting looking.
 
 How can you access and manipulate properties of objects?
-you can access objects with dot notation by saying object.property = "changed property". You could also use bracket notation like object["property"] = "changed value";
+you can access objects with dot notation by saying object.property = "changed property". You could also use bracket notation like object["property"] = "changed value";*/
