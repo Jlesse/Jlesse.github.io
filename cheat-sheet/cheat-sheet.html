@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+   <link rel="stylesheet" type="text/css" href="./cheat-sheet.css">
+</head>
+<body>
+  <H1 class = "header">SQL command cheat sheet</H1>
+<table class = "table_color">
+    <tr>
+      <th>Command</th>
+      <th>Action</th>
+      <th>Syntax</th>
+    </tr>
+    <tr>
+      <td>SELECT</td>
+      <td>The SELECT statement is used to select data from a database.</td>
+      <td>SELECT column_name, column_name FROM table_name;</td>
+  </tr>
+  <tr>
+    <td>DISTINCT</td>
+    <td>The DISTINCT keyword can be used to return only distinct (different) values.</td>
+    <td>SELECT DISTINCT column_name, column_name
+  FROM table_name;</td>
+  </tr>
+  <tr>
+    <td>WHERE</td>
+    <td>The WHERE clause is used to extract only those records that fulfill a specified criterion.</td>
+    <td>SELECT column_name,column_name
+  FROM table_name
+  WHERE column_name operator value;</td>
+  </tr>
+  <tr>
+    <td>AND</td>
+    <td>The AND operator displays a record if both the first condition AND the second condition are true.</td>
+    <td>SELECT column_name,column_name
+  FROM table_name
+  WHERE column_name operator value AND column_name operator value;</td>
+  </tr>
+  <tr>
+    <td>OR</td>
+    <td>The OR operator displays a record if either the first condition OR the second condition is true.
+  </td>
+    <td>SELECT column_name,column_name
+  FROM table_name
+  WHERE column_name operator value OR column_name operator value;</td>
+  </tr>
+  <tr>
+    <td>ORDER BY</td>
+    <td>The ORDER BY keyword is used to sort the result-set by one or more columns.</td>
+    <td>SELECT column_name, column_name
+  FROM table_name
+  ORDER BY column_name ASC|DESC, column_name ASC|DESC;</td>
+  </tr>
+  <tr>
+    <td>INSERT INTO</td>
+    <td>The INSERT INTO statement is used to insert new records in a table.</td>
+    <td>INSERT INTO table_name (column1,column2,column3,...)
+  VALUES (value1,value2,value3,...);</td>
+  </tr>
+  <tr>
+    <td>UPDATE</td>
+    <td>The UPDATE statement is used to update existing records in a table.</td>
+    <td>UPDATE table_name
+  SET column1=value1,column2=value2,...
+  WHERE some_column=some_value;</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>The DELETE statement is used to delete rows in a table.</td>
+    <td>DELETE FROM table_name
+  WHERE some_column=some_value;</td>
+  </tr>
+  <tr>
+    <td>SELECT TOP</td>
+    <td>The SELECT TOP clause is used to specify the number of records to return.</td>
+    <td>SELECT TOP number|percent column_name(s)
+  FROM table_name;</td>
+  </tr>
+  <tr>
+    <td>LIKE</td>
+    <td>The LIKE operator is used to search for a specified pattern in a column.</td>
+    <td>SELECT column_name(s)
+  FROM table_name
+  WHERE column_name LIKE pattern;</td>
+  </tr>
+  <tr>
+    <td>IN</td>
+    <td>The IN operator allows you to specify multiple values in a WHERE clause.</td>
+    <td>SELECT column_name(s)
+  FROM table_name
+  WHERE column_name IN (value1,value2,...);</td>
+  </tr>
+  <tr>
+    <td>BETWEEN</td>
+    <td>The BETWEEN operator selects values within a range. The values can be numbers, text, or dates.</td>
+    <td>SELECT column_name(s)
+  FROM table_name
+  WHERE column_name BETWEEN value1 AND value2;</td>
+  </tr>
+  <tr>
+    <td>AS</td>
+    <td>SQL aliases are used to give a database table, or a column in a table, a temporary name.</td>
+    <td>SELECT column_name AS alias_name
+  FROM table_name;</td>
+  </tr>
+  <tr>
+    <td>INNER JOIN</td>
+    <td>The INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns in both tables.</td>
+    <td>SELECT column_name(s)
+  FROM table1
+  INNER JOIN table2
+  ON table1.column_name=table2.column_name;</td>
+  </tr>
+  <tr>
+    <td>LEFT JOIN</td>
+    <td>The LEFT JOIN keyword returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right side when there is no match.</td>
+    <td>SELECT column_name(s)
+  FROM table1
+  LEFT JOIN table2
+  ON table1.column_name=table2.column_name;</td>
+  </tr>
+  <tr>
+    <td>RIGHT JOIN</td>
+    <td>The RIGHT JOIN keyword returns all rows from the right table (table2), with the matching rows in the left table (table1). The result is NULL in the left side when there is no match.</td>
+    <td>SELECT column_name(s)
+  FROM table1
+  RIGHT JOIN table2
+  ON table1.column_name=table2.column_name;</td>
+  </tr>
+  <tr>
+    <td>FULL OUTER JOIN</td>
+    <td>The FULL OUTER JOIN keyword returns all rows from the left table (table1) and from the right table (table2).</td>
+    <td>SELECT column_name(s)
+  FROM table1
+  FULL OUTER JOIN table2
+  ON table1.column_name=table2.column_name;</td>
+  </tr>
+</table>
+
+</body>
+</html>
