@@ -5,7 +5,7 @@ position: relative;
 z-index: 1;
 padding-top: 3%;
 padding-left: 2%;
-top: 25%;
+top: 10%;
 }
 
 .projectsTextAlign{
@@ -77,7 +77,7 @@ body {
   border-radius: 35px;
   position: absolute;
   background-color: #787B7F;
-  top: 120%;
+  top: 130%;
   padding-left: 30px;
   padding-top: 30px;
 }

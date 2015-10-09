@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Big O</title>
+  <link rel="stylesheet" type="text/css" href="./blog-template.css">
+</head>
+  <body>
+  <nav class="breadcrumb">
+    <a href="../index.html">Home</a> >
+    <a href="./index.html">Blog List</a>
+    > Understanding Big O Notation
+</nav>
+<section>
+    <h2 id = "center">Big O Notation</h2>
+</section>
+<main>
+  <section>
+  <article id ="blogtext">
+    <p>
+    Big O notation is a way to write about <a href="https://en.wikipedia.org/wiki/The_Big_O">an anime series</a> that aired in the U.S. on adult swim in the the early 2000's. Just kidding, its actually a way of describing how efficiently an algorithm performs as input size increases. A key understanding here, is that we are concerned with the efficiency of the an algorithm and not necessarily with the actual performance on a given machine. Obviously, different computers have different hardware components, and may run the same algorithm at different speeds, so when when we talk about big O notation, we are talking about complexity (how well an algorithm scales), as opposed to performance.
+    </p>
+    Lets set clarify a little bit the difference between performance and complexity:
+    <ol>
+      <li><strong>Performance:</strong> How much time/memory/disk is actually used when the program is run? This is largely dependent on machine specs and compiler type in addition to the code.</li>
+      <li><strong>Complexity:</strong> How do the resource requirements of an algorithm scale? What happens as the input size increases?</li>
+    </ol>
+    <p>
+      Given these definitions, its clear that the complexity of an algorithm effects performance, but not the other way around. To determine the complexity of an algorithm, we examine the number of basic operations that it performs. Basic operations are things like:
+      <ul>
+        <li>A single arithmetic operation (e.g. x+y)</li>
+        <li>A single assignment (x = y)</li>
+        <li>A single test (x==y)</li>
+        <li>one read ( from RAM)</li>
+        <li>one write (of a primitive type to RAM)</li>
+      </ul>
+      A basic operation is a single step that the CPU performs. It serves as good measuring tool for complexity, as you can relate the number of basic operations to the input size, and how it changes comparatively with a greater input size. Though different CPU's may be able to execute basic operation in varying amounts of time (clock speed), the machine language and architecture is similar enough across the board that we can talk about basic operations in the same way regardless of machine. Ruby does not have a have primitive types, as all types in ruby are objects. There is often a trade off between the complexity of a program and ease (and time consumption) of writing code with a given language, but that is a discussion for another day.
+    </p>
+    <p>
+      Some methods perform the same number of operations regardless of input size. These methods are considered to be of <strong>constant time</strong>. Here is an example:
+      <p>
+      <code>
+       <p>def add_to_first(array, num)</p>
+         <p> array[0] += 1</p>
+        <p>end</p>
+      </code>
+    </p>
+      regardless of the size of the array, this will always perform 2 basic operations, assignment and addition. All we are doing is adding a number to the number at the first index. because execution is unrelated to the size of input (the number of elements in the array) this is written as O(1).
+    </p>
+    <p>
+      This may seems a little confusing. You may be thinking what is all of this O business? Why is the number 1, shouldn't it be 2? I'll get to that, don't worry! Big O notation is actually form of asymptotic notation. lets take a trip back to high school math to clarify. Check out <a href="http://mathworld.wolfram.com/Asymptote.html">this link</a> for a good definition. When using big O notation we are loosely referring to an asymptotic function. In the example in the link, in big O, that function could be written as O(1/N)where N is the the size of the input to the algorithm and O is just a place holder for the speed of the system, as that is not our focus. As far as I know you would probably never see O(1/N), because that would mean that as the input size increases, execution time would decrease which seems very unlikely. The best case you can hope for is constant time which we just saw in our array example. In big O notation we drop all extra coefficients and focus on what most affects the execution efficiency as input size increases. We drop all constant operations. In constant time we say O(1), because execution is unrelated to input size, there is no "N" involved in the asymptotic representation of how input effects performance. If we were to graph the performance of this algorithm as input size increases, it would simply be a flat horizontal line.
+    </p>
+    <p>
+      Some common notations ranked from best to worst look like this:
+      <ol>
+        <li>O(1)</li>
+        <li>O(log(N))</li>
+        <li>O(N)</li>
+        <li>O(N log(N))</li>
+        <li>O(N^2)</li>
+        <li>O(2^N)</li>
+        <li>O(N!)</li>
+      </ol>
+      And here is a graph showing how algorithms of various big O notations scale:
+      <figure>
+        <img src="./imgs/big-o-complexity.png">
+        <figcaption> image via <a href="http://bigocheatsheet.com/">bigocheatsheet.com</a></figcaption>
+      </figure>
+    </p>
+    <p>
+      The graph above was pulled from <a href="http://bigocheatsheet.com/">bigocheatsheet.com</a>, which I highly recommend taking a glance at. When we are talking about big O, we are largely concerned with the N (the input size), and how N is being modified. N! would be awful because that would mean the factorial of N which would quickly grow very large (e.g. 100 * 99 * 98 * 97 etc..). The best case modification of N would be log N, as this would mean that execution would be based on the repeated division of input size. We are unconcerned with the base of the logarithm because it is considered a constant factor.
+    </p>
+    <p> Big O is not only a highly entertaining yet short run anime, its also a highly entertaining and useful tool for expressing how an algorithm scales. Its important to keep this in mind especially as we get more involved with searching and sorting large data structures and large input sizes.</p>
+
+  </article>
+</section>
+<section>
+  <footer id="footer">
+   <a href="https://github.com/Jlesse">
+      <img src="../imgs/github10.png" alt= "github pic"></a>
+    <a href="https://plus.google.com/107426449603896436155/posts">
+      <img src="../imgs/google110.png" alt ="google+ pic"></a>
+    <a href="https://www.linkedin.com/profile/view?id=AAIAABIoGIQBJh3U1oy2e5edoVOL0IuHWbKF--M&amp;trk=nav_responsive_tab_profile">
+      <img src="../imgs/linkedin1.png" alt ="linked in pic"></a>
+    <a href="https://twitter.com/jlesse_agile">
+      <img src="../imgs/logo22.png" alt="twitter pic"></a>
+    <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">
+      <img src="../imgs/email5.png" alt ="e-mail pic"></a>
+    <a href="http://www.freepik.com">Icons and backgrounds by freepik.com</a>
+  </footer>
+</section>
+</main>
+  </body>
+</html>
