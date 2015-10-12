@@ -13,9 +13,6 @@ function setup() {
 }
 
 function draw() {
-var speed = map(mouseY, 0.1, height, 0, 2);
-speed = constrain(speed, 0.01, 4);
-cheese.rate(speed);
 if (x1 > 1000) {modifier = -2}
 else if (x1 < 1) {modifier = 2}
       x1= x1+modifier;
