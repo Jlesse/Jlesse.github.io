@@ -28,9 +28,9 @@ else if (x1 < 1) {modifier = 2}
   box(x1, y1, 200);
 
   translate(-150,0,0);
-  sphere(spectrum.getEnergy("treble"),6);
+  sphere(getEnergy("treble"),6);
   translate(150,0,0);
-  sphere(spectrum.getEnergy("treble"),6);
-  torus(spectrum.getEnergy("bass"), ("lowMid"), 5);
+  sphere(getEnergy("treble"),6);
+  torus(getEnergy("bass"), ("lowMid"), 5);
 
 }
