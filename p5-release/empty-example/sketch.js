@@ -10,9 +10,13 @@ function setup() {
   var myCanvas = createCanvas(600, 400, WEBGL);
   myCanvas.parent("myContainer");
   cheese.play();
+  fft = new p5.fft();
 }
 
 function draw() {
+
+var spectrum = fft.analyze(); 
+  
 if (x1 > 1000) {modifier = -2}
 else if (x1 < 1) {modifier = 2}
       x1= x1+modifier;
@@ -24,9 +28,9 @@ else if (x1 < 1) {modifier = 2}
   box(x1, y1, 200);
 
   translate(-150,0,0);
-  sphere(200,6);
+  sphere(spectrum.getEnergy("treble"),6);
   translate(150,0,0);
-  sphere(200,6);
-  torus(300, 80, 4);
+  sphere(spectrum.getEnergy("treble"),6);
+  torus(spectrum.getEnergy("bass"), ("lowMid"), 5);
 
 }
