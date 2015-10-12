@@ -10,7 +10,7 @@ function setup() {
   var myCanvas = createCanvas(600, 400, WEBGL);
   myCanvas.parent("myContainer");
   cheese.play();
-  fft = new p5.fft();
+  fft = new p5.FFT();
 }
 
 function draw() {
