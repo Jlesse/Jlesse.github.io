@@ -28,9 +28,9 @@ else if (x1 < 1) {modifier = 2}
   box(x1, y1, 200);
 
   translate(-150,0,0);
-  sphere(getEnergy("treble"),6);
+  sphere(50,6);
   translate(150,0,0);
-  sphere(getEnergy("treble"),6);
-  torus(getEnergy("bass"), ("lowMid"), 5);
+  sphere(50,6);
+  torus(50, 8, 5);
 
 }
