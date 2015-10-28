@@ -23,7 +23,7 @@ else if (x1 < 1) {modifier = 2}
       x1= 50; //x1+modifier;
       y1= 50; //y1+modifier;
 
- rotateX(frameCount * 0.01);
+ rotateX(frameCount * 1.00);
  rotateY(frameCount * 1.00);
 
   box(x1, y1, 200);
