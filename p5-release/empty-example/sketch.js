@@ -15,7 +15,8 @@ function setup() {
 
 function draw() {
 
-var spectrum = fft.analyze(); 
+var spectrum = fft.analyze();
+console.log(fft.getEnergy("mid"))
   
 if (x1 > 1000) {modifier = -2}
 else if (x1 < 1) {modifier = 2}
